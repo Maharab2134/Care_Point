@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/tools">
+
+    <!-- Header Section -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/tvGreeting"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tvGreeting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/app_name"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- Username Section -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp" />
+
+    <!-- ViewPager Slider -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CDC1FF" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="7dp"
+        android:background="#7A7C7E" />
+
+    <!-- Dashboard Grid -->
+    <GridLayout
+        android:id="@+id/gridDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="7dp">
+
+        <!-- Doctor List Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDoctorList"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            cardview:cardCornerRadius="20dp"
+            cardview:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFCCEA"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgDoctorList"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/doctor"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvDoctorList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor List"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Medicine List Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMedicineList"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            cardview:cardCornerRadius="20dp"
+            cardview:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFCCEA"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgMedicineList"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/drugs"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvMedicineList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine List"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ambulance List Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAmbulanceList"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            cardview:cardCornerRadius="20dp"
+            cardview:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFCCEA"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgAmbulanceList"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ambulance"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvAmbulanceList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambulance List"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Logout Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            cardview:cardCornerRadius="20dp"
+            cardview:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFCCEA"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgLogout"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/logout"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    android:textSize="16sp"
+                    android:textColor="#DC0C0C" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:menu="@menu/main_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>

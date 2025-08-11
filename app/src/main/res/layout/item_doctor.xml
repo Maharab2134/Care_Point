@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageDoctor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/user"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_background" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textSpecialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialization" />
+
+        <TextView
+            android:id="@+id/textHospitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name" />
+
+        <TextView
+            android:id="@+id/textQualification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualification" />
+
+        <TextView
+            android:id="@+id/textBMDCReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMDC Reg: XXXX" />
+
+        <TextView
+            android:id="@+id/textExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".Activity.MedicineListActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Medicine Image -->
+        <ImageView
+            android:id="@+id/imageMedicine"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/m3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Medicine Information -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textMedicineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paracetamol"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand A"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fever"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500mg"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: 10.50"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

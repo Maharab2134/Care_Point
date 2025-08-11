@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorImageView"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:src="@drawable/doctor"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/doctorSpecialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialization"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/doctorHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/doctorQualification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualification"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/doctorBMDC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMDC Registration"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/doctorExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/bookAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:backgroundTint="#00796B"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

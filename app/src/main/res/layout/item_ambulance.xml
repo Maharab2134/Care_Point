@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:context=".Activity.AmbulanceListActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Ambulance Image -->
+        <ImageView
+            android:id="@+id/imageAmbulance"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ambulance"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"/>
+
+        <!-- Ambulance Information -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textAmbulanceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambulance 1"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textServiceArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/textAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_green_dark"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/callAmbulance"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/emergency"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
